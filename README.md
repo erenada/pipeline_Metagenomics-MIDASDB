@@ -10,6 +10,6 @@ GitHub repository for the project "Metagenomic analysis to identify gene cluster
 
 - After unpacking the genomes we suggest that you change these folder names as well as the genome .fasta file names in these folders. This is because of two reasons: 1) we came across to errors when the genome folder names are longer than certain numbers of characters. 2) If the genome name contains dots ".", this will produce error when running the MIDAS2 scripts. 
 
-    - We changed the folder and genome names using this custom script
+    - We changed the folder and genome names using this custom script: Scripts/folder-setup.sh
 
     ``
