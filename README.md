@@ -12,4 +12,6 @@ GitHub repository for the project "Metagenomic analysis to identify gene cluster
 
     - We changed the folder and genome names using this custom script: Scripts/folder-setup.sh
 
-    ``
+
+
+    - run  `bash test_analysis.sh 20`
