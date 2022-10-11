@@ -58,6 +58,8 @@ cat ${samples_fp} | xargs -Ixx bash -c \
     --select_threshold=1,0.5 --debug --force \
     ${midas_outdir} &> ${logs_dir}/xx_snps_${num_cores}.log"
 
+### HERE -select_threshold=2,0.5
+
 
 #echo "Testing Across-Samples SNV Module"
 #midas2 merge_snps --samples_list ${pool_fp} \
