@@ -17,6 +17,7 @@
 
 4) Follow the steps in README file.
 
+# bio/Bio-SearchIO-hmmer/1.7.3-GCC-10.3.0
 
 
 non-defult settings:
