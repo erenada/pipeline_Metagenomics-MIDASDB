@@ -51,3 +51,6 @@ cat ${samples_fp} | uniq | xargs -Ixx bash -c \ # previous code: head -n 2 ${sam
     --select_threshold=1,0.5 \              ##previous code: --select_threshold=5,0.5
     ${midas_outdir} &> ${logs_dir}/xx_snps_${num_cores}.log"
 
+
+### sample_count = median coverage Coverage!!
+
