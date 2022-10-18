@@ -1,0 +1,8 @@
+Across samples abundant species merging in subcommand merge_species with args
+{
+    "subcommand": "merge_species",
+    "debug": false,
+    "midas_outdir": "/data/schwartzlab/eren/MIDAS_RUN3/MIDAS2/tests/midas2_output/across_samples",
+    "samples_list": "/data/schwartzlab/eren/MIDAS_RUN3/MIDAS2/tests/midas2_output/samples_list.tsv",
+    "min_cov": 2.0
+}

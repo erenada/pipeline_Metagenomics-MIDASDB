@@ -1,0 +1,25 @@
+Across samples population SNV calling in subcommand merge_snps with args
+{
+    "subcommand": "merge_snps",
+    "debug": true,
+    "midas_outdir": "/data/schwartzlab/eren/MIDAS_RUN3/MIDAS2/tests/midas2_output/across_samples",
+    "samples_list": "/data/schwartzlab/eren/MIDAS_RUN3/MIDAS2/tests/midas2_output/samples_list.tsv",
+    "midasdb_name": "gtdb",
+    "midasdb_dir": "/data/schwartzlab/eren/MIDAS_RUN3/MIDAS2/tests/midasdb_gtdb",
+    "species_list": null,
+    "genome_depth": 5.0,
+    "genome_coverage": 0.4,
+    "sample_counts": 2,
+    "site_depth": 5,
+    "site_ratio": 3.0,
+    "site_prev": 0.9,
+    "snv_type": "common",
+    "snp_pooled_method": "prevalence",
+    "snp_maf": 0.05,
+    "snp_type": "bi, tri, quad",
+    "locus_type": "any",
+    "num_cores": 20,
+    "chunk_size": 1000000,
+    "advanced": true,
+    "robust_chunk": false
+}

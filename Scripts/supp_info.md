@@ -54,3 +54,19 @@ cat ${samples_fp} | uniq | xargs -Ixx bash -c \ # previous code: head -n 2 ${sam
 
 ### sample_count = median coverage Coverage!!
 
+
+### run1, run2:
+
+run2 : --select_threshold=0,0.5  (in snv module)
+
+don forget the change in RUN1
+
+echo "Testing Single-Sample SNV Module"
+cat ${samples_fp} | xargs -Ixx bash -c \
+    "midas2 run_snps --sample_name xx -1 ${testdir}/reads/xx_R1.fastq.gz -2 ${testdir}/reads/xx_R2.fastq.gz \
+    --num_cores ${num_cores} --chunk_size 500000 \
+    --midasdb_name ${midas_dbname} --midasdb_dir ${midas_db} \
+    --advanced --ignore_ambiguous --debug --force --sample_counts 2 \
+    --select_by median_marker_coverage,unique_fraction_covered \
+    --select_threshold=0,0.5 \
+    ${midas_outdir} &> ${logs_dir}/xx_snps_${num_cores}.log"

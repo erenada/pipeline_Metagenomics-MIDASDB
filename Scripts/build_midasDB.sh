@@ -6,7 +6,7 @@ testdir="${basedir}/tests"
 echo ${testdir}
 
 db_name="newdb"
-db_dir="${testdir}/midasdb_{db_name}"
+db_dir="${testdir}/midasdb_${db_name}"
 
 echo "START MIDAS2 Database Build Testing"
 echo "MIDASDB ${db_name} is built locally at ${db_dir}"

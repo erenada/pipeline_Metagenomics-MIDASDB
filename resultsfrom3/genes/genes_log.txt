@@ -1,0 +1,15 @@
+Across samples pan-gene CNV merging in subcommand merge_genes with args
+{
+    "subcommand": "merge_genes",
+    "debug": true,
+    "midas_outdir": "/data/schwartzlab/eren/MIDAS_RUN3/MIDAS2/tests/midas2_output/across_samples",
+    "samples_list": "/data/schwartzlab/eren/MIDAS_RUN3/MIDAS2/tests/midas2_output/samples_list.tsv",
+    "species_list": null,
+    "genome_depth": 1.0,
+    "sample_counts": 2,
+    "midasdb_name": "gtdb",
+    "midasdb_dir": "/data/schwartzlab/eren/MIDAS_RUN3/MIDAS2/tests/midasdb_gtdb",
+    "min_copy": 0.35,
+    "cluster_pid": "95",
+    "num_cores": 20
+}
