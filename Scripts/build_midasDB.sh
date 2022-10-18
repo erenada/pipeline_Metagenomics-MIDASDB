@@ -1,8 +1,8 @@
-#! /usr/bin/bash
+#!/bin/bash
 set -e
 
-basedir=`pwd`
-testdir="${basedir}/tests"
+basedir="/data/schwartzlab/eren/MIDAS_RUN1/MIDAS2"
+testdir="$basedir/tests"
 echo ${testdir}
 
 db_name="newdb"
@@ -11,13 +11,13 @@ db_dir="${testdir}/midasdb_${db_name}"
 echo "START MIDAS2 Database Build Testing"
 echo "MIDASDB ${db_name} is built locally at ${db_dir}"
 
-#rm -rf ${db_dir}
+rm -rf ${db_dir}
 
-#echo "Make copy of custom collection of genomes"
-#cp -r ${testdir}/genomes ${db_dir}
+echo "Make copy of custom collection of genomes"
+cp -r ${testdir}/genomes ${db_dir}
 
 
-#echo "Annotate Genomes and Repgenome"
+echo "Annotate Genomes and Repgenome"
 midas2 annotate_genome --species all --midasdb_name ${db_name} --midasdb_dir ${db_dir} --debug --force
 midas2 build_midasdb --generate_gene_feature --genomes all --midasdb_name ${db_name} --midasdb_dir ${db_dir} --debug --force
 

@@ -7,14 +7,20 @@ GitHub repository for the project "Metagenomic analysis to identify gene cluster
 ### Required folder structure for creating custom database
 
 
-MIDAS2
-    - "tests", "Scripts" (among other default MIDAS2 files and folders)
-      - genomes
-      - reads
-      - build_midasDB.sh
-      - midas_analysis.sh
+MIDAS2 main folder
 
-- Download and unpack the genomes that you want to build a database from:
+- Default MIDAS2 files and folders
+- Scripts 
+- tests
+    - genomes
+      - cleaned_imports
+        - folders that contain genomes (species_id/genome_id/genome_id.fa)
+      - genomes.tsv
+    - reads
+    - build_midasDB.sh
+    - midas_analysis.sh
+
+- Download and unpack custom genomes in 'MIDAS2/tests/genomes' folder.
 
 `tar -xvf iMGMC-mMAGs-dereplicated_genomes.tar`
 
@@ -22,8 +28,10 @@ MIDAS2
   
 - This is because of two reasons: 1) MIDAS gives an error when genome folder names are longer than certain numbers of characters. 2) If the genome name contains dots ".", this could create an error.
 
-    - We changed the folder and the genome names using a custom script: Scripts/folder-setup.sh
-
+    - We changed the folder and the genome names using Scripts/folder-setup.sh script.
+  
+    - Make sure you move all genome folders in MIDAS2/tests/genomes/cleaned_imports
+      - genomes.tsv file should be in the upper directory (MIDAS2/tests/genomes/).
 
 
 
@@ -31,4 +39,4 @@ MIDAS2
     - run  `bash test_analysis.sh 20`
     
     
-    .... in progres...
+    .... in progress...

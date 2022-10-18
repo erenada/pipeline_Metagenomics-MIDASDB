@@ -29,9 +29,10 @@ paste genome_id species_id genome_id reps > temp
 
 echo -e "genome\tspecies\trepresentative\tgenome_is_representative" | cat - temp > ../genomes.tsv
 
-paste org_genome_id genome_id species_id > ../org_id_index.tsv
+paste org_genome_id genome_id species_id > ../org_id_index
 
 rm genome_id
 rm species_id
 rm reps
 rm temp
+rm org_genome_id
