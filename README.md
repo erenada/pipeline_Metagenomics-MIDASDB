@@ -31,12 +31,8 @@ MIDAS2 main folder
     - We changed the folder and the genome names using Scripts/folder-setup.sh script.
   
     - Make sure you move all genome folders in MIDAS2/tests/genomes/cleaned_imports
-      - genomes.tsv file should be in the upper directory (MIDAS2/tests/genomes/).
+      - genomes.tsv file should be in the upper directory (MIDAS2/tests/genomes/). 
+      - Make sure to change the necessary directory names.
 
-
-
-
-    - run  `bash test_analysis.sh 20`
+    - run  `bash build_midasDB.sh 20` 
     
-    
-    .... in progress...
