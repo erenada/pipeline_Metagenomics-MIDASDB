@@ -13,8 +13,6 @@ do
 
 #create the genome.tsv file (and another file to save the original .fasta sequence names in case of a need)
 
-  echo ${id_var} >> genome_id
-  echo ${id_var} >> species_id
   echo ${genome} >> org_genome_id
   echo "1" >> reps
 done
